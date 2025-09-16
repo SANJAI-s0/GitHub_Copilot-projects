@@ -1,0 +1,28 @@
+/* Glassmorphism effect for cards */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.glass-dark {
+  background: rgba(30,41,59,0.48);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(148,163,184,0.17);
+}
+/* Remove glow and use pleasant color for text */
+.glow {
+  text-shadow: none;
+  color: #7dd3fc !important; /* Tailwind blue-300 */
+}
+.time-glow {
+  filter: none;
+}
+.gsap-pop { opacity: 0; transform: scale(0.96);}
+.suggestion-flag {
+  width: 18px;
+  height: 14px;
+  vertical-align: middle;
+  margin-right: 7px;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #0002;
+}
