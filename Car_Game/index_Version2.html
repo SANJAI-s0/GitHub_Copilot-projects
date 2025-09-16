@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>F1 Racer - GSAP Car Racing Game</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+
+    <!-- HUD -->
+    <div id="hud">
+      <div id="score">Score: 0</div>
+      <div id="high-score">High: 0</div>
+      <div id="playback-btns">
+        <button id="play-btn" aria-label="Play">&#9658;</button>
+        <button id="pause-btn" aria-label="Pause">&#10074;&#10074;</button>
+        <button id="resume-btn-hud" aria-label="Resume">&#8635;</button>
+      </div>
+    </div>
+
+    <!-- On-Screen Controls -->
+    <div id="controls">
+      <button id="btn-up" aria-label="Accelerate">&#8593;</button>
+      <button id="btn-left" aria-label="Left">&#8592;</button>
+      <button id="btn-down" aria-label="Brake">&#8595;</button>
+      <button id="btn-right" aria-label="Right">&#8594;</button>
+    </div>
+
+    <!-- Overlay Menus -->
+    <div id="overlay" class="hidden">
+      <div id="menu">
+        <h1>F1 Racer</h1>
+        <button id="start-btn">Play</button>
+        <div id="howto">
+          <strong>Controls:</strong><br>
+          Arrow keys or on-screen buttons<br>
+          Avoid obstacles, survive as long as you can!
+        </div>
+      </div>
+      <div id="gameover" class="hidden">
+        <h2>Game Over</h2>
+        <div id="final-score"></div>
+        <button id="restart-btn">Restart</button>
+      </div>
+      <div id="paused" class="hidden">
+        <h2>Paused</h2>
+        <button id="resume-btn">Resume</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
