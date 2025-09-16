@@ -40,7 +40,7 @@ Projects in this repo may include:
 ## 💡 How to Use
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/vibe-coding.git
+   https://github.com/SANJAI-s0/GitHub_Copilot-projects.git
 
 2. Navigate into a project folder.
 
